@@ -7,18 +7,39 @@ fn main() {
 
 
 
-    let heart_eyed_cat = '😻';//喵喵喵？
-    println!("{heart_eyed_cat}");
+    //复合类型
+
+
+    let a: (u8, u64, u128) = (1, 23, 134);
+    //第一种访问值方式
+    //let (x, y, z) = a;
+
+    //println!("x={x},y={y},z={z}");
+//第二种
+    let x = a.0;
+    let y = a.1;
+    let z = a.2;
+
+    println!("x={x},y={y},z={z}");
 
 
 
-    //喵喵喵？还能这么写，隐藏？？？
-    let a = 10;
-    {
-        let a = a + 20;
-        println!("aa = {a}");
-    }
-    println!("a={a}");
+
+
+
+
+    // let heart_eyed_cat = '😻';//喵喵喵？
+    // println!("{heart_eyed_cat}");
+    //
+    //
+    //
+    // //喵喵喵？还能这么写，隐藏？？？
+    // let a = 10;
+    // {
+    //     let a = a + 20;
+    //     println!("aa = {a}");
+    // }
+    // println!("a={a}");
 
 
 
